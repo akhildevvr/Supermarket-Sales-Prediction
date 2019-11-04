@@ -51,5 +51,14 @@ Environment: If the environment is declared safe by government, customer would b
 Economic Growth: If the current economy shows a consistent growth, per capita income will rise, therefore buying power of customers will increase.
 
 
+## EDA
 
-![1549263564109](https://user-images.githubusercontent.com/48282246/68144702-23749e80-ff2c-11e9-99e6-4e037128ebf3.png)
+### Target Variable
+
+Since our target variable is continuous, we can visualise it by plotting its histogram.
+
+https://github.com/akhildevvr/Supermarket-Sales-Prediction/issues/1#issue-517310592
+
+As you can see, it is a right skewd variable and would need some data transformation to treat its skewness.
+
+### Independent Variables (numeric variables)
