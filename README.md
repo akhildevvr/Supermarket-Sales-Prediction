@@ -62,3 +62,6 @@ https://github.com/akhildevvr/Supermarket-Sales-Prediction/issues/1#issue-517310
 As you can see, it is a right skewd variable and would need some data transformation to treat its skewness.
 
 ### Independent Variables (numeric variables)
+
+Now let’s check the numeric independent variables. We’ll again use the histograms for visualizations because that will help us in visualizing the distribution of the variables.
+![Grid Plot](https://user-images.githubusercontent.com/48282246/68162276-993e3180-ff4f-11e9-815a-fbba3470533c.jpeg)
