@@ -57,7 +57,7 @@ Economic Growth: If the current economy shows a consistent growth, per capita in
 
 Since our target variable is continuous, we can visualise it by plotting its histogram.
 
-https://github.com/akhildevvr/Supermarket-Sales-Prediction/issues/1#issue-517310592
+![1549263564109](https://user-images.githubusercontent.com/48282246/68144702-23749e80-ff2c-11e9-99e6-4e037128ebf3.png)
 
 As you can see, it is a right skewd variable and would need some data transformation to treat its skewness.
 
@@ -65,3 +65,11 @@ As you can see, it is a right skewd variable and would need some data transforma
 
 Now let’s check the numeric independent variables. We’ll again use the histograms for visualizations because that will help us in visualizing the distribution of the variables.
 ![Grid Plot](https://user-images.githubusercontent.com/48282246/68162276-993e3180-ff4f-11e9-815a-fbba3470533c.jpeg)
+
+1.There seems to be no clear-cut pattern in Item_Weight.
+2.Item_Visibility is right-skewed and should be transformed to curb its skewness.
+3.We can clearly see 4 different distributions for Item_MRP. It is an interesting insight.
+
+### Independent Variables (categorical variables)
+Now we’ll try to explore and gain some insights from the categorical variables. A categorical variable or feature can have only a finite set of values. Let’s first plot Item_Fat_Content.
+
