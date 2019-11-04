@@ -50,3 +50,6 @@ Environment: If the environment is declared safe by government, customer would b
 
 Economic Growth: If the current economy shows a consistent growth, per capita income will rise, therefore buying power of customers will increase.
 
+
+
+![1549263564109](https://user-images.githubusercontent.com/48282246/68144702-23749e80-ff2c-11e9-99e6-4e037128ebf3.png)
