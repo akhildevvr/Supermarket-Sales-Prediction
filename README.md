@@ -73,3 +73,8 @@ Now let’s check the numeric independent variables. We’ll again use the histo
 ### Independent Variables (categorical variables)
 Now we’ll try to explore and gain some insights from the categorical variables. A categorical variable or feature can have only a finite set of values. Let’s first plot Item_Fat_Content.
 
+![Fat Content](https://user-images.githubusercontent.com/48282246/68162514-149fe300-ff50-11e9-89b2-83749e629ea6.jpeg)
+
+Let us check other categorical variables.
+
+
