@@ -83,5 +83,15 @@ In Outlet_Size’s plot, for 4016 observations, Outlet_Size is blank or missing.
 
 We’ll also check the remaining categorical variables.
 
+![Plot Grid](https://user-images.githubusercontent.com/48282246/68240472-e4fee280-0004-11ea-8fb1-37f421995e12.jpeg)
+
+1. Lesser number of observations in the data for the outlets established in the year 1998 as compared to the other years.
+2. Supermarket Type 1 seems to be the most popular category of Outlet_Type.
+
+After looking at every feature individually, let’s now do some bivariate analysis. Here we’ll explore the independent variables with respect to the target variable. The objective is to discover hidden relationships between the independent variable and the target variable and use those findings in missing data imputation and feature engineering in the next module.
+
+We will make use of scatter plots for the continuous or numeric variables and violin plots for the categorical variables.
+
+
 
 
