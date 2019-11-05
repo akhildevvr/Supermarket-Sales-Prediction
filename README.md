@@ -186,3 +186,42 @@ positive correlation: > 0 and <= 1
 no correlation: 0
 It is not desirable to have correlated features if we are using linear regressions.
 
+![Corr Plot 2](https://user-images.githubusercontent.com/48282246/68240687-44f58900-0005-11ea-9b81-ae3ddb0fe464.jpeg)
+
+The correlation plot above shows correlation between all the possible pairs of variables in out data. The correlation between any two variables is represented by a pie. A blueish pie indicates positive correlation and reddish pie indicates negative correlation. The magnitude of the correlation is denoted by the area covered by the pie.
+
+Variables price_per_unit_wt and Item_Weight are highly correlated as the former one was created from the latter. Similarly price_per_unit_wt and Item_MRP are highly correlated for the same reason.
+
+## *Model Building
+
+Finally we have arrived at most interesting stage of the whole process — predictive modeling. We will start off with the simpler models and gradually move on to more sophisticated models. We will start with the simpler linear models and then move over to more complex models like RandomForest and XGBoost.
+
+We will build the following models in the next sections.
+
+Linear Regression
+Lasso Regression
+Ridge Regression
+RandomForest
+XGBoost
+Evaluation Metrics for Regression
+The process of model building is not complete without evaluation of model’s performance. That’s why we need an evaluation metric to evaluate our model. Since this is a regression problem, we can evaluate our models using any one of the following evaluation metrics:
+
+1.Mean Absolute Error (MAE) is the mean of the absolute value of the errors.
+2.Mean Squared Error (MSE) is the mean of the squared errors.
+3.Root Mean Squared Error (RMSE) is the square root of the mean of the squared errors.
+
+### Linear Regression
+
+Let’s build our linear regression model with all the variables. We will use 5-fold cross validationin all the models we are going to build. Basically cross vaidation gives an idea as to how well a model generalizes to unseen data.
+
+### Regularised Linear Regression
+
+Regularised regression models can handle the correlated independent variables well and helps in overcoming overfitting. Ridge penalty shrinks the coefficients of correlated predictors towards each other, while the Lasso tends to pick one of a pair of correlated features and discard the other. The tuning parameter lambda controls the strength of the penalty.
+
+### Random Forest
+
+We will now build a RandomForest model with 400 trees. The other tuning parameters used here are mtry — no. of predictor variables randomly sampled at each split, and min.node.size — minimum size of terminal nodes (setting this number large causes smaller trees and reduces overfitting).
+
+#### Best Model Parameters
+
+
