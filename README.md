@@ -115,4 +115,13 @@ We could have used boxplots here, but instead we’ll use the violin plots as th
 
 In the univariate analysis, we came to know about the empty values in Outlet_Size variable. Let’s check the distribution of the target variable across Outlet_Size.
 
+![Violin Plot 2](https://user-images.githubusercontent.com/48282246/68240573-1677ae00-0005-11ea-9b18-f0fc10788493.jpeg)
+
+The distribution of ‘Small’ Outlet_Size is almost identical to the distribution of the blank category (first vioin) of Outlet_Size. So, we can substitute the blanks in Outlet_Size with ‘Small’.
+
+Please note that this is not the only way to impute missing values, but for the time being we will go ahead and impute the missing values with ‘Small’.
+
+Let’s examine the remaining variables.
+
+
 
