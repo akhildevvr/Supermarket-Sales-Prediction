@@ -92,6 +92,9 @@ After looking at every feature individually, let’s now do some bivariate analy
 
 We will make use of scatter plots for the continuous or numeric variables and violin plots for the categorical variables.
 
+### Target Variable vs Independent Numerical Variables
+
+Let’s explore the numerical variables first.
 
 
 
