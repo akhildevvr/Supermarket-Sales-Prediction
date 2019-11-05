@@ -77,4 +77,11 @@ Now we’ll try to explore and gain some insights from the categorical variables
 
 Let us check other categorical variables.
 
+![Cat Plot Grid](https://user-images.githubusercontent.com/48282246/68240457-da444d80-0004-11ea-8e84-35953937ba5d.jpeg)
+
+In Outlet_Size’s plot, for 4016 observations, Outlet_Size is blank or missing.We will check for this in the bivariate analysis to substitute the missing values in the Outlet_Size.
+
+We’ll also check the remaining categorical variables.
+
+
 
