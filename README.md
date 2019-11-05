@@ -210,29 +210,29 @@ The process of model building is not complete without evaluation of model’s pe
 2.Mean Squared Error (MSE) is the mean of the squared errors.
 3.Root Mean Squared Error (RMSE) is the square root of the mean of the squared errors.
 
- **Linear Regression
+ ### Linear Regression
 
 Let’s build our linear regression model with all the variables. We will use 5-fold cross validationin all the models we are going to build. Basically cross vaidation gives an idea as to how well a model generalizes to unseen data.
 
- **Regularised Linear Regression
+ ### Regularised Linear Regression
 
 Regularised regression models can handle the correlated independent variables well and helps in overcoming overfitting. Ridge penalty shrinks the coefficients of correlated predictors towards each other, while the Lasso tends to pick one of a pair of correlated features and discard the other. The tuning parameter lambda controls the strength of the penalty.
 
- **Random Forest
+ ### Random Forest
 
 We will now build a RandomForest model with 400 trees. The other tuning parameters used here are mtry — no. of predictor variables randomly sampled at each split, and min.node.size — minimum size of terminal nodes (setting this number large causes smaller trees and reduces overfitting).
 
-  ***Best Model Parameters
+ #### Best Model Parameters
 
 ![RF Plot](https://user-images.githubusercontent.com/48282246/68240737-55a5ff00-0005-11ea-9f1c-d6d9e689c18d.jpeg)
 As per the plot shown above, the best score is achieved at mtry = 5 and min.node.size = 20.
 
 
-**XGBoost
+### XGBoost
 
 We are going to use the xgb.cv() function for cross validation. This function comes with the xgboost package itself. Here we are using cross validation for finding the optimal value of nrounds.
 
-  ***Variable Importance
+ #### Variable Importance
 
 Let’s plot feature importance based on the RandomForest model
 
