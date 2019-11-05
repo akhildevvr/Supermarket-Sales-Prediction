@@ -1,12 +1,12 @@
 # Supermarket Sales Prediction
 
-## *1.Problem Statement*
+## *Problem Statement*
 
 The data scientists at BigMart have collected sales data for 1559 products across 10 stores in different cities for the year 2013. Now each product has certain attributes that sets it apart from other products. Same is the case with each store.
 
 The aim is to build a predictive model to find out the sales of each product at a particular store so that it would help the decision makers at BigMart to find out the properties of any product or store, which play a key role in increasing the overall sales.
 
-## *2. Hypothesis Generation*
+## *Hypothesis Generation*
 
 It involves understanding the problem in detail by brainstorming as many factors as possible which can impact the outcome. It is done by understanding the problem statement thoroughly and before looking at the data.
 
@@ -210,24 +210,34 @@ The process of model building is not complete without evaluation of model’s pe
 2.Mean Squared Error (MSE) is the mean of the squared errors.
 3.Root Mean Squared Error (RMSE) is the square root of the mean of the squared errors.
 
-### Linear Regression
+ **Linear Regression
 
 Let’s build our linear regression model with all the variables. We will use 5-fold cross validationin all the models we are going to build. Basically cross vaidation gives an idea as to how well a model generalizes to unseen data.
 
-### Regularised Linear Regression
+ **Regularised Linear Regression
 
 Regularised regression models can handle the correlated independent variables well and helps in overcoming overfitting. Ridge penalty shrinks the coefficients of correlated predictors towards each other, while the Lasso tends to pick one of a pair of correlated features and discard the other. The tuning parameter lambda controls the strength of the penalty.
 
-### Random Forest
+ **Random Forest
 
 We will now build a RandomForest model with 400 trees. The other tuning parameters used here are mtry — no. of predictor variables randomly sampled at each split, and min.node.size — minimum size of terminal nodes (setting this number large causes smaller trees and reduces overfitting).
 
-#### Best Model Parameters
+  ***Best Model Parameters
 
 ![RF Plot](https://user-images.githubusercontent.com/48282246/68240737-55a5ff00-0005-11ea-9f1c-d6d9e689c18d.jpeg)
 As per the plot shown above, the best score is achieved at mtry = 5 and min.node.size = 20.
 
-#### Variable Importance
+
+**XGBoost
+
+We are going to use the xgb.cv() function for cross validation. This function comes with the xgboost package itself. Here we are using cross validation for finding the optimal value of nrounds.
+
+  ***Variable Importance
 
 Let’s plot feature importance based on the RandomForest model
+
+![XGB Plot](https://user-images.githubusercontent.com/48282246/68240767-60609400-0005-11ea-9705-88320b866f97.jpeg)
+
+As expected Item_MRP is the most important variable in predicting the target variable. New features created by us, like price_per_unit_wt, Outlet_Years, Item_MRP_Clusters, are also among the top most important variables. This is why feature engineering plays such a crucial role in predictive modeling.
+
 
