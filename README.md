@@ -51,7 +51,7 @@ Environment: If the environment is declared safe by government, customer would b
 Economic Growth: If the current economy shows a consistent growth, per capita income will rise, therefore buying power of customers will increase.
 
 
-## EDA
+## *EDA
 
 ### Target Variable
 
@@ -127,4 +127,62 @@ Let’s examine the remaining variables.
 
 1. Tier 1 and Tier 3 locations of Outlet_Location_Type look similar.
 2. In the Outlet_Type plot, Grocery Store has most of its data points around the lower sales values as compared to the other categories.
+
+## *Missing Value Treatment
+
+Missing data can have a severe impact on building predictive models because the missing values might be contain some vital information which could help in making better predictions. So, it becomes imperative to carry out missing data imputation. There are different methods to treat missing values based on the problem and the data. Some of the common techniques are as follows:
+
+1. Deletion of rows: In train dataset, observations having missing values in any variable are deleted. The downside of this method is the loss of information and drop in prediction power of model.
+
+2. Mean/Median/Mode Imputation: In case of continuous variable, missing values can be replaced with mean or median of all known values of that variable. For categorical variables, we can use mode of the given values to replace the missing values.
+
+3. Building Prediction Model: We can even make a predictive model to impute missing data in a variable. Here we will treat the variable having missing data as the target variable and the other variables as predictors. We will divide our data into 2 datasets—one without any missing value for that variable and the other with missing values for that variable. The former set would be used as training set to build the predictive model and it would then be applied to the latter set to predict the missing values.
+
+## *Feature Engineering
+
+Most of the times, the given features in a dataset are not sufficient to give satisfactory predictions. In such cases, we have to create new features which might help in improving the model’s performance. Let’s try to create some new features for our dataset.
+
+In this section we will create the following new features:
+
+1.Item_Type_new: Broader categories for the variable Item_Type.
+2.Item_category: Categorical variable derived from Item_Identifier.
+3.Outlet_Years: Years of operation for outlets.
+4.price_per_unit_wt: Item_MRP/Item_Weight
+5.Item_MRP_clusters: Binned feature for Item_MRP.
+
+### Encoding Categorical Variables
+
+Most of the machine learning algorithms produce better result with numerical variables only. So, it is essential to treat the categorical variables present in the data. One thing that can be done is to completely remove the categorical variables, but that would lead to enormous loss of information. Fortunately we have smarter techniques to deal with the categorical variables.
+
+In this stage, we will convert our categorical variables into numerical ones. We will use 2 techniques — Label Encoding and One Hot Encoding.
+
+Label encoding simply means converting each category in a variable to a number. It is more suitable for ordinal variables — categorical variables with some order.
+
+In One hot encoding, each category of a categorical variable is converted into a new binary column (1/0).
+
+#### Label encoding for the categorical variables
+We will label encode Outlet_Size and Outlet_Location_Type as these are ordinal variables.
+
+## *PreProcessing Data
+
+In simple words, pre-processing refers to the transformations applied to your data before feeding it to the algorithm. It invloves further cleaning of data, data transformation, data scaling and many more things.
+
+For our data, we will deal with the skewness and scale the numerical variables
+
+### Removing Skewness
+
+Skewness in variables is undesirable for predictive modeling. Some machine learning methods assume normally distributed data and a skewed variable can be transformed by taking its log, square root, or cube root so as to make its distribution as close to normal distribution as possible. In our data, variables Item_Visibility and price_per_unit_wt are highly skewed. So, we will treat their skewness with the help of log transformation.
+
+### Scaling numeric predictors
+
+Let’s scale and center the numeric variables to make them have a mean of zero, standard deviation of one and scale of 0 to 1. Scaling and centering is required for linear regression models.
+
+### Correlated Variables
+
+Let’s examine the correlated features of train dataset. Correlation varies from -1 to 1.
+
+negative correlation: < 0 and >= -1
+positive correlation: > 0 and <= 1
+no correlation: 0
+It is not desirable to have correlated features if we are using linear regressions.
 
