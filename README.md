@@ -108,4 +108,11 @@ Now we’ll visualise the categorical variables with respect to Item_Outlet_Sale
 
 We could have used boxplots here, but instead we’ll use the violin plots as they show the full distribution of the data. The width of a violin plot at a particular level indicates the concentration or density of data at that level. The height of a violin tells us about the range of the target variable values.
 
+![Violin Plot 1](https://user-images.githubusercontent.com/48282246/68240540-0b248280-0005-11ea-96c3-12ab7b43e1a3.jpeg)
+
+1. Distribution of Item_Outlet_Sales across the categories of Item_Type is not very distinct and same is the case with Item_Fat_Content.
+2. The distribution for OUT010 and OUT019 categories of Outlet_Identifier are quite similar and very much different from the rest of the categories of Outlet_Identifier.
+
+In the univariate analysis, we came to know about the empty values in Outlet_Size variable. Let’s check the distribution of the target variable across Outlet_Size.
+
 
