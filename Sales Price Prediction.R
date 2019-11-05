@@ -6,8 +6,8 @@ library(corrplot)   # used for making correlation plot
 library(xgboost)    # used for building XGBoost model 
 library(cowplot)    # used for combining multiple plots 
 
-train = fread("train.csv") 
-test = fread("test.csv") 
+train = fread("train_kOBLwZA.csv") 
+test = fread("test_t02dQwI.csv") 
 
 dim(train)
 dim(test)
