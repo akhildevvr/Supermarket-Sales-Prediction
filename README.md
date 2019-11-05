@@ -96,5 +96,16 @@ We will make use of scatter plots for the continuous or numeric variables and vi
 
 Let’s explore the numerical variables first.
 
+![Corr Plot](https://user-images.githubusercontent.com/48282246/68240513-fba53980-0004-11ea-862c-0ab403b4bc5f.jpeg)
+
+1. Item_Outlet_Sales is spread well across the entire range of the Item_Weight without any obvious pattern.
+2. In Item_Visibility vs Item_Outlet_Sales, there is a string of points at Item_Visibility = 0.0 which seems strange as item visibility cannot be completely zero. We will take note of this issue and deal with it in the later stages.
+3. In the third plot of Item_MRP vs Item_Outlet_Sales, we can clearly see 4 segments of prices that can be used in feature engineering to create a new variable.
+
+### Target Variable vs Independent Categorical Variables
+
+Now we’ll visualise the categorical variables with respect to Item_Outlet_Sales. We will try to check the distribution of the target variable across all the categories of each of the categorical variable.
+
+We could have used boxplots here, but instead we’ll use the violin plots as they show the full distribution of the data. The width of a violin plot at a particular level indicates the concentration or density of data at that level. The height of a violin tells us about the range of the target variable values.
 
 
