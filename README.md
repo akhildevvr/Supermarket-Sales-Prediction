@@ -123,5 +123,8 @@ Please note that this is not the only way to impute missing values, but for the 
 
 Let’s examine the remaining variables.
 
+![Violin Plot 3](https://user-images.githubusercontent.com/48282246/68240595-1f687f80-0005-11ea-83f8-f0c5738d2beb.jpeg)
 
+1. Tier 1 and Tier 3 locations of Outlet_Location_Type look similar.
+2. In the Outlet_Type plot, Grocery Store has most of its data points around the lower sales values as compared to the other categories.
 
