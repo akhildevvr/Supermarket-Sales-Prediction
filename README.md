@@ -51,7 +51,7 @@ Environment: If the environment is declared safe by government, customer would b
 Economic Growth: If the current economy shows a consistent growth, per capita income will rise, therefore buying power of customers will increase.
 
 
-## *EDA
+## *EDA*
 
 ### Target Variable
 
@@ -128,7 +128,7 @@ Let’s examine the remaining variables.
 1. Tier 1 and Tier 3 locations of Outlet_Location_Type look similar.
 2. In the Outlet_Type plot, Grocery Store has most of its data points around the lower sales values as compared to the other categories.
 
-## *Missing Value Treatment
+## *Missing Value Treatment*
 
 Missing data can have a severe impact on building predictive models because the missing values might be contain some vital information which could help in making better predictions. So, it becomes imperative to carry out missing data imputation. There are different methods to treat missing values based on the problem and the data. Some of the common techniques are as follows:
 
@@ -138,7 +138,7 @@ Missing data can have a severe impact on building predictive models because the 
 
 3. Building Prediction Model: We can even make a predictive model to impute missing data in a variable. Here we will treat the variable having missing data as the target variable and the other variables as predictors. We will divide our data into 2 datasets—one without any missing value for that variable and the other with missing values for that variable. The former set would be used as training set to build the predictive model and it would then be applied to the latter set to predict the missing values.
 
-## *Feature Engineering
+## *Feature Engineering*
 
 Most of the times, the given features in a dataset are not sufficient to give satisfactory predictions. In such cases, we have to create new features which might help in improving the model’s performance. Let’s try to create some new features for our dataset.
 
@@ -163,7 +163,7 @@ In One hot encoding, each category of a categorical variable is converted into a
 #### Label encoding for the categorical variables
 We will label encode Outlet_Size and Outlet_Location_Type as these are ordinal variables.
 
-## *PreProcessing Data
+## *PreProcessing Data*
 
 In simple words, pre-processing refers to the transformations applied to your data before feeding it to the algorithm. It invloves further cleaning of data, data transformation, data scaling and many more things.
 
@@ -192,7 +192,7 @@ The correlation plot above shows correlation between all the possible pairs of v
 
 Variables price_per_unit_wt and Item_Weight are highly correlated as the former one was created from the latter. Similarly price_per_unit_wt and Item_MRP are highly correlated for the same reason.
 
-## *Model Building
+## *Model Building*
 
 Finally we have arrived at most interesting stage of the whole process — predictive modeling. We will start off with the simpler models and gradually move on to more sophisticated models. We will start with the simpler linear models and then move over to more complex models like RandomForest and XGBoost.
 
