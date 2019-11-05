@@ -224,4 +224,10 @@ We will now build a RandomForest model with 400 trees. The other tuning paramete
 
 #### Best Model Parameters
 
+![RF Plot](https://user-images.githubusercontent.com/48282246/68240737-55a5ff00-0005-11ea-9f1c-d6d9e689c18d.jpeg)
+As per the plot shown above, the best score is achieved at mtry = 5 and min.node.size = 20.
+
+#### Variable Importance
+
+Let’s plot feature importance based on the RandomForest model
 
